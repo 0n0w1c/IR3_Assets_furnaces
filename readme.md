@@ -1,6 +1,6 @@
 # IR3 Assets: furnaces
 
-Reskins the furnaces to use IR3 graphical assets, if installed.
+Reskins the furnaces using IR3 graphical assets, if installed.
 
 *Requires the manual installation of the Industrial Revolution 3 Asset Packs*
 
