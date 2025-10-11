@@ -4,7 +4,7 @@ Under the *Creative Commons license (Section 2(a)(4))*, the clause “Media and 
 
 ---
 
-#### Is this a derivative work of Industrial Revolution 3 (IR3)?
+#### Is this mod a derivative work of Industrial Revolution 3 (IR3)?
 
 No. A derivative work involves creative transformation—changing, remixing, or building upon another author’s expression. This mod doesn’t do that; it only references IR3’s existing assets so Factorio will display them. It does not alter or redistribute IR3’s artwork, its use of those assets is purely technical and functional. Under Creative Commons principles, such technical integrations do not create Adapted Material or derivative works.
 
