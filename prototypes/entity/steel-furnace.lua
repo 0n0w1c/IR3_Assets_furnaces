@@ -6,6 +6,8 @@ entity.icon                        = "__IndustrialRevolution3Assets1__/graphics/
 entity.collision_box               = COLLISION_BOX
 entity.selection_box               = SELECTION_BOX
 
+entity.circuit_connector           = table.deepcopy(data.raw["furnace"]["stone-furnace"].circuit_connector)
+
 entity.energy_source.light_flicker = {
     color = { r = 0, g = 0, b = 0, a = 1 },
     minimum_intensity = 0.6,
@@ -67,7 +69,7 @@ entity.graphics_set                = {
                 height = 256,
                 frame_count = 30,
                 line_length = 6,
-                animation_speed = 1,
+                animation_speed = 0.5,
                 scale = SPRITE_SCALE,
                 shift = WORKING_SHIFT,
                 draw_as_glow = true,
@@ -84,7 +86,7 @@ entity.graphics_set                = {
                 priority = "high",
                 width = 192,
                 height = 128,
-                animation_speed = 1,
+                animation_speed = 0.5,
                 scale = SPRITE_SCALE,
                 shift = FLOOR_GLOW_SHIFT,
                 draw_as_glow = false,

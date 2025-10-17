@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.1
+Date: 17.10.2025
+  Bugfixes:
+    - Added status_colors to the electric furnace, status lights now function
+  Changes:
+    - Adjusted furnace animation speeds
+    - Adjusted the steel and electric furnace circuit connectors
+  Features:
+    - None
+---------------------------------------------------------------------------------------------------
 Version: 0.1.0
 Date: 15.10.2025
   Bugfixes:

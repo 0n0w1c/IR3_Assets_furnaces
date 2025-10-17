@@ -1,7 +1,20 @@
-local entity        = data.raw["furnace"]["electric-furnace"]
+local entity             = data.raw["furnace"]["electric-furnace"]
 
-entity.icon         = "__IndustrialRevolution3Assets1__/graphics/icons/64/electric-furnace.png"
-entity.graphics_set = {
+entity.icon              = "__IndustrialRevolution3Assets1__/graphics/icons/64/electric-furnace.png"
+
+entity.circuit_connector = table.deepcopy(data.raw["furnace"]["stone-furnace"].circuit_connector)
+
+entity.graphics_set      = {
+    status_colors = {
+        disabled             = { r = 1, g = 0.25, b = 0.25, a = 1 },
+        full_output          = { r = 1, g = 0.625, b = 0.25, a = 1 },
+        idle                 = { r = 0.25, g = 0.625, b = 1, a = 1 },
+        insufficient_input   = { r = 1, g = 0.625, b = 0.25, a = 1 },
+        low_power            = { r = 1, g = 0.25, b = 0.25, a = 1 },
+        no_minable_resources = { r = 0.25, g = 0.625, b = 1, a = 1 },
+        no_power             = { r = 0, g = 0, b = 0, a = 0 },
+        working              = { r = 0.25, g = 1, b = 0.25, a = 1 },
+    },
     animation = {
         layers = {
             {
@@ -10,7 +23,7 @@ entity.graphics_set = {
                 priority = "high",
                 width = 320,
                 height = 128,
-                animation_speed = 0.75,
+                animation_speed = 1,
                 scale = 0.5,
                 shift = { 1, 0.5 },
                 draw_as_shadow = true,
@@ -21,7 +34,7 @@ entity.graphics_set = {
                 priority = "high",
                 width = 192,
                 height = 256,
-                animation_speed = 0.75,
+                animation_speed = 1,
                 scale = 0.5,
                 shift = { 0, -0.5 },
             }
@@ -56,7 +69,7 @@ entity.graphics_set = {
                 height = 128,
                 frame_count = 30,
                 line_length = 5,
-                animation_speed = 1,
+                animation_speed = 0.5,
                 scale = 0.5,
                 shift = { 0, 0.5 },
                 draw_as_light = true,
@@ -75,7 +88,7 @@ entity.graphics_set = {
                 height = 128,
                 frame_count = 30,
                 line_length = 5,
-                animation_speed = 1,
+                animation_speed = 0.5,
                 scale = 0.5,
                 shift = { 0, -1 },
                 draw_as_glow = true,
