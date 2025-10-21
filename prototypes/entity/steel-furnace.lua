@@ -2,14 +2,14 @@ require("scaling")
 
 local entity                       = data.raw["furnace"]["steel-furnace"]
 
-entity.icon                        = "__IndustrialRevolution3Assets1__/graphics/icons/64/stone-alloy-furnace.png"
+entity.icon                        = "__IndustrialRevolution3Assets1__/graphics/icons/64/steel-furnace.png"
 entity.collision_box               = COLLISION_BOX
 entity.selection_box               = SELECTION_BOX
 
 entity.circuit_connector           = table.deepcopy(data.raw["furnace"]["stone-furnace"].circuit_connector)
 
 entity.energy_source.light_flicker = {
-    color = { r = 0, g = 0, b = 0, a = 1 },
+    color = { r = 0, g = 0, b = 0, a = 0 },
     minimum_intensity = 0.6,
     maximum_intensity = 0.95
 }
@@ -29,7 +29,7 @@ entity.graphics_set                = {
         layers = {
             {
                 filename =
-                "__IndustrialRevolution3Assets2__/graphics/entities/machines/furnaces/stone-alloy-furnace-base.png",
+                "__IndustrialRevolution3Assets2__/graphics/entities/machines/furnaces/steel-furnace-base.png",
                 priority = "high",
                 width = 192,
                 height = 256,
@@ -44,7 +44,7 @@ entity.graphics_set                = {
             },
             {
                 filename =
-                "__IndustrialRevolution3Assets2__/graphics/entities/machines/furnaces/stone-alloy-furnace-shadow.png",
+                "__IndustrialRevolution3Assets2__/graphics/entities/machines/furnaces/steel-furnace-shadow.png",
                 priority = "high",
                 width = 320,
                 height = 128,
@@ -61,48 +61,27 @@ entity.graphics_set                = {
     },
     working_visualisations = {
         {
+            always_draw = false,
             animation = {
-                filename =
-                "__IndustrialRevolution3Assets2__/graphics/entities/machines/furnaces/stone-furnace-working.png",
-                priority = "high",
-                width = 192,
-                height = 256,
-                frame_count = 30,
-                line_length = 6,
-                animation_speed = 0.5,
-                scale = SPRITE_SCALE,
-                shift = WORKING_SHIFT,
+                animation_speed = 1,
+                blend_mode = "additive",
                 draw_as_glow = true,
                 draw_as_light = false,
                 draw_as_shadow = false,
-                blend_mode = "additive",
-            },
-            fadeout = true
-        },
-        {
-            animation = {
-                filename =
-                "__IndustrialRevolution3Assets2__/graphics/entities/machines/furnaces/stone-furnace-floor-glow.png",
+                filename = "__IndustrialRevolution3Assets2__/graphics/entities/machines/furnaces/steel-furnace-glow.png",
+                frame_count = 60,
+                height = 160,
+                line_length = 10,
                 priority = "high",
-                width = 192,
-                height = 128,
-                animation_speed = 0.5,
                 scale = SPRITE_SCALE,
-                shift = FLOOR_GLOW_SHIFT,
-                draw_as_glow = false,
-                draw_as_light = true,
-                draw_as_shadow = false,
-                blend_mode = "additive",
-                tint = { r = 1, g = 0.45, b = 0, a = 1 }
+                shift = STEEL_WORKING_SHIFT,
+                width = 160,
+                x = 0,
+                y = 0,
+                tint = { r = 1, g = 0.25, b = 0, a = 1 },
             },
-            effect = "flicker",
             fadeout = true,
-            light = {
-                color = { r = 1, g = 0.45, b = 0, a = 1 },
-                intensity = 0.5,
-                size = 4,
-                shift = LIGHT_SHIFT
-            }
+            render_layer = "object"
         }
     }
 }

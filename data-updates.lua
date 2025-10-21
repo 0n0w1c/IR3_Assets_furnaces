@@ -11,6 +11,8 @@ require("prototypes/item/stone-furnace")
 
 require("prototypes/entity/steel-furnace")
 require("prototypes/item/steel-furnace")
+require("prototypes/technology/advanced-material-processing")
 
 require("prototypes/entity/electric-furnace")
 require("prototypes/item/electric-furnace")
+require("prototypes/technology/advanced-material-processing-2")

@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.2
+Date: 20.10.2025
+  Bugfixes:
+    - None
+  Changes:
+    - Changed the steel furnace graphic set
+    - Updated the Advanced material processing and Advanced material processing 2 technology icons
+  Features:
+    - None
+---------------------------------------------------------------------------------------------------
 Version: 0.1.1
 Date: 17.10.2025
   Bugfixes:
