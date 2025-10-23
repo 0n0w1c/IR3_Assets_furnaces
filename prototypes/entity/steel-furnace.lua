@@ -78,7 +78,7 @@ entity.graphics_set                = {
                 width = 160,
                 x = 0,
                 y = 0,
-                tint = { r = 1, g = 0.25, b = 0, a = 1 },
+                tint = { r = 1, g = 0.4, b = 0, a = 1 },
             },
             fadeout = true,
             render_layer = "object"
