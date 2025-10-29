@@ -16,7 +16,9 @@ LIGHT_SHIFT         = { 0 * SHIFT_FACTOR, 0.75 * SHIFT_FACTOR }
 if USE2x2 then
     COLLISION_BOX = { { -0.7, -0.7 }, { 0.7, 0.7 } }
     SELECTION_BOX = { { -0.8, -1.0 }, { 0.8, 1.0 } }
+    REMNANTS = "small-remnants"
 else
     COLLISION_BOX = { { -1.25, -1.25 }, { 1.25, 1.25 } }
     SELECTION_BOX = { { -1.5, -1.5 }, { 1.5, 1.5 } }
+    REMNANTS = "medium-remnants"
 end
