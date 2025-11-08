@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.7
+Date: 08.11.2025
+  Bugfixes:
+    - Updated the furnace recycling icons
+  Changes:
+    - Changed the startup setting for burner furnace size (default: 2x2)
+---------------------------------------------------------------------------------------------------
 Version: 0.1.6
 Date: 07.11.2025
   Bugfixes:

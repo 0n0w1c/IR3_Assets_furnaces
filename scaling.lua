@@ -1,4 +1,5 @@
-USE2x2              = settings.startup["IR3-furnace-2x2"] and settings.startup["IR3-furnace-2x2"].value or false
+USE2x2              = settings.startup["IR3-burner-furnace-size"] and
+    settings.startup["IR3-burner-furnace-size"].value == "2x2"
 
 SCALE_3x3           = 0.5
 SCALE_2x2           = 0.5 * (2 / 3)

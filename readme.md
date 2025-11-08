@@ -12,8 +12,8 @@ For licensing concerns: [FAQ](https://mods.factorio.com/mod/IR3_Assets_furnaces/
 
 See the mod [IR3 Assets: Some assembly required](https://mods.factorio.com/mod/IR3_Assets_some_assembly_required)
 
-If the IR3 Assets are not installed, this mod will do nothing.
+*Startup setting to select burner furnace size (2x2 or 3x3)*
 
-Startup setting to select burner furnace size (2x2 or 3x3).
+If the IR3 Assets are not installed, this mod will do nothing.
 
 This mod does **not** include IR3 or the assets.  

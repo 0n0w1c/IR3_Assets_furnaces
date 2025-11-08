@@ -1,9 +1,10 @@
 data:extend({
   {
-    type = "bool-setting",
-    name = "IR3-furnace-2x2",
+    type = "string-setting",
+    name = "IR3-burner-furnace-size",
     setting_type = "startup",
-    default_value = true,
+    allowed_values = { "2x2", "3x3" },
+    default_value = "2x2",
     order = "a"
   }
 })
