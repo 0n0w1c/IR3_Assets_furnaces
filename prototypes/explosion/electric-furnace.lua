@@ -2,6 +2,7 @@ data:extend({
     {
         type = "explosion",
         name = "electric-furnace-explosion",
+        hidden_in_factoriopedia = true,
         animations = {
             {
                 animation_speed = 0.5,

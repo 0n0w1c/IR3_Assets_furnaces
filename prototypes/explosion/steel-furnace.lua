@@ -1,7 +1,8 @@
 data:extend({
     {
         type = "explosion",
-        name = "stone-furnace-explosion",
+        name = "steel-furnace-explosion",
+        hidden_in_factoriopedia = true,
         animations = {
             {
                 animation_speed = 0.5,
@@ -32,30 +33,9 @@ data:extend({
                             { -0.34, -0.34 },
                             { 0.34,  0.34 }
                         },
-                        particle_name = "trailing-stone-particle",
+                        particle_name = "trailing-steel-particle",
                         probability = 1,
-                        repeat_count = 16,
-                        speed_from_center = 0.06,
-                        speed_from_center_deviation = 0.03,
-                        type = "create-particle"
-                    },
-                    {
-                        damage_type_filters = {
-                            "fire",
-                            "impact"
-                        },
-                        frame_speed = 1,
-                        frame_speed_deviation = 0.1,
-                        initial_height = 0.5,
-                        initial_vertical_speed = 0.07,
-                        initial_vertical_speed_deviation = 0.1,
-                        offset_deviation = {
-                            { -0.34, -0.34 },
-                            { 0.34,  0.34 }
-                        },
-                        particle_name = "trailing-wood-particle",
-                        probability = 1,
-                        repeat_count = 8,
+                        repeat_count = 92,
                         speed_from_center = 0.06,
                         speed_from_center_deviation = 0.03,
                         type = "create-particle"
@@ -66,13 +46,13 @@ data:extend({
             type = "direct"
         },
         flags = { "not-on-map" },
-        icon = "__IndustrialRevolution3Assets1__/graphics/icons/64/stone-furnace.png",
+        icon = "__IndustrialRevolution3Assets1__/graphics/icons/64/steel-furnace.png",
         icon_mipmaps = 4,
         icon_size = 64,
         localised_name = {
             "entity-name.ir-explosion",
             {
-                "entity-name.stone-furnace"
+                "entity-name.steel-furnace"
             }
         },
         sound = {

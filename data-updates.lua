@@ -6,16 +6,16 @@ if not (mods["IndustrialRevolution3Assets1"]
     return
 end
 
-require("prototypes/explosion/stone-furnace-explosion")
+require("prototypes/explosion/stone-furnace")
 require("prototypes/entity/stone-furnace")
 require("prototypes/item/stone-furnace")
 
-require("prototypes/explosion/steel-furnace-explosion")
+require("prototypes/explosion/steel-furnace")
 require("prototypes/entity/steel-furnace")
 require("prototypes/item/steel-furnace")
 require("prototypes/technology/advanced-material-processing")
 
-require("prototypes/explosion/electric-furnace-explosion")
+require("prototypes/explosion/electric-furnace")
 require("prototypes/entity/electric-furnace")
 require("prototypes/item/electric-furnace")
 require("prototypes/technology/advanced-material-processing-2")
