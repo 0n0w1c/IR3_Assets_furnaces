@@ -39,3 +39,18 @@ if mods["quality"] and recipe then
     local recycling = require("__quality__/prototypes/recycling")
     recycling.generate_recycling_recipe(recipe)
 end
+
+if settings.startup["IR3-enable-gas-furnace"].value == true then
+    require("prototypes/explosion/gas-furnace")
+    require("prototypes/entity/gas-furnace")
+    require("prototypes/item/gas-furnace")
+    require("prototypes/recipe/gas-furnace")
+
+    table.insert(data.raw["technology"]["advanced-material-processing"].effects, { type = "unlock-recipe", recipe = "gas-furnace" })
+
+    recipe = data.raw["recipe"]["gas-furnace"]
+    if mods["quality"] and recipe then
+        local recycling = require("__quality__/prototypes/recycling")
+        recycling.generate_recycling_recipe(recipe)
+    end
+end
