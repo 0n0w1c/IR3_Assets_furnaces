@@ -150,20 +150,6 @@ data:extend({
             },
         },
         result_inventory_size             = 1,
-        heating_energy                    = "100kW",
-        custom_tooltip_fields             = {
-            {
-                name = { "tooltip.heating-energy" },
-                value = {
-                    "",
-                    "100",
-                    " ",
-                    { "si-prefix-symbol-kilo" },
-                    { "si-unit-symbol-watt" },
-                },
-                order = 200,
-            },
-        },
         selection_box                     = {
             { -1.5, -1.5 },
             { 1.5,  1.5 }
