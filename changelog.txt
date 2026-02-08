@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.2
+Date: 08.02.2026
+  Bugfixes:
+    - None
+  Changes:
+    - Decreased the gas furnace crafting speed from 2.5 to 2
+    - Increased the gas furnace energy usage from 50kW to 150kW
+---------------------------------------------------------------------------------------------------
 Version: 0.2.1
 Date: 22.11.2025
   Bugfixes:

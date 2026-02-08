@@ -80,7 +80,7 @@ data:extend({
         },
         corpse                            = "medium-remnants",
         crafting_categories               = { "smelting" },
-        crafting_speed                    = 2.5,
+        crafting_speed                    = 2,
         damaged_trigger_effect            = {
             {
                 damage_type_filters = {
@@ -128,13 +128,12 @@ data:extend({
             },
             light_flicker        = { color = { r = 0, g = 0, b = 0, a = 0 } },
         },
-        energy_usage                      = "0.05MW",
+        energy_usage                      = "150kW",
         entity_info_icon_shift            = { 0, 0 },
         fast_replaceable_group            = "furnace",
         flags                             = { "placeable-player", "placeable-neutral", "player-creation" },
         gui_title_key                     = "gui-title.smelting",
         icon                              = "__IndustrialRevolution3Assets1__/graphics/icons/64/steel-furnace.png",
-        icon_mipmaps                      = 4,
         icon_size                         = 64,
         match_animation_speed_to_activity = false,
         max_health                        = 350,
